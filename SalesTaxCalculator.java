@@ -5,7 +5,7 @@ public class SalesTaxCalculator {
         String name = args[0];
         double amount = Double.parseDouble(args[1]);
         //check for respective state and set that state
-        name = name.toLowerCase();
+        name = name.toLowerCase(); //to prevent typos
         if (name.equals("indiana")) {
             state = new Indiana("Indiana");
             state.setSalesTaxBehavior(new SevenPercent());
@@ -18,6 +18,7 @@ public class SalesTaxCalculator {
         } else {
             System.out.println("Invalid state (get it?). please choose alaska or indiana (or hawaii).");
         }
+        state.showTax(amount);
     }
 }
 
