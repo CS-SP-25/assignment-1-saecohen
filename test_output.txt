@@ -1,0 +1,2 @@
+Test1 failed. Expected: 'The sales tax on $246.00 in Indiana is $17.22.', but got: 'The sales tax on $246.00 in Indiana is $17.22'
+Test2 failed. Expected: 'The sales tax on $246.00 in Alaska is $0.00.', but got: 'The sales tax on $246.00 in Alaska is $0.00'
